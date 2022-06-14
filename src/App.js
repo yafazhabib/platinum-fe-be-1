@@ -2,7 +2,7 @@ import { ThemeProvider } from '@mui/system';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { theme } from './Theme';
-import InfoProduk from './pages/InfoProduk';
+import InfoProduk from './pages/seller/InfoProduk';
 
 import "swiper/css";
 
