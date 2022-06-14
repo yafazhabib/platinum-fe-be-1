@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.button-controll{
+    background: #E2D4F0 !important;
+    border-radius: 12px !important;
+    width: 108px !important;
+    height: 48px !important;
+}
+
+.button-active{
+    background: #7126B5 !important;
+    color: white !important;
+}
+
+.filter-button{
+    margin-right: 20px !important;
+    width: 100px !important;
+}
