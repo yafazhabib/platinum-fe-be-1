@@ -15,13 +15,13 @@ const ItemCard = () => {
                                 alt="green iguana"
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
+                                <Typography gutterBottom variant="h6" component="div">
                                     Jam Tangan
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Aksesoris
                                 </Typography>
-                                <Typography gutterBottom variant="h5" component="div">
+                                <Typography gutterBottom variant="h6" component="div">
                                     Rp.10.000,00
                                 </Typography>
                             </CardContent>
@@ -38,13 +38,13 @@ const ItemCard = () => {
                                 alt="green iguana"
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
+                                <Typography gutterBottom variant="h6" component="div">
                                     Jam Tangan
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Aksesoris
                                 </Typography>
-                                <Typography gutterBottom variant="h5" component="div">
+                                <Typography gutterBottom variant="h6" component="div">
                                     Rp.10.000,00
                                 </Typography>
                             </CardContent>

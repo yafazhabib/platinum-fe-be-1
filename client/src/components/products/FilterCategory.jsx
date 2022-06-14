@@ -4,6 +4,15 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const FilterCategory = () => {
+  const [clicked, setClicked] = React.useState('');
+  let items = [];
+  let keys = ['', 'Hobi', 'Kendaraan', 'Baju', 'Elektronik', 'Kesehatan']
+  keys.map((item)=>{
+    items.push(
+      <SwiperSlide className='filter-button'><Button className={item === clicked ? 'button-active button-controll' : 'button-controll'} onClick={()=>setClicked(item)}>{item === '' ? 'Semua' : item}</Button></SwiperSlide>
+    )
+  })
+
   return (
     <>
       <Box mt={3}>
@@ -38,12 +47,7 @@ const FilterCategory = () => {
           }}
           className="mySwiper"
         >
-          <SwiperSlide className='filter-button'><Button className='button-active button-controll'>Semua</Button></SwiperSlide>
-          <SwiperSlide className='filter-button'><Button className='button-controll'>Hobi</Button></SwiperSlide>
-          <SwiperSlide className='filter-button'><Button className='button-controll'>Kendaraan</Button></SwiperSlide>
-          <SwiperSlide className='filter-button'><Button className='button-controll'>Baju</Button></SwiperSlide>
-          <SwiperSlide className='filter-button'><Button className='button-controll'>Elektronik</Button></SwiperSlide>
-          <SwiperSlide className='filter-button'><Button className='button-controll'>Kesehatan</Button></SwiperSlide>
+          {items}
         </Swiper>
       </Box>
     </>
@@ -52,3 +56,4 @@ const FilterCategory = () => {
 }
 
 export default FilterCategory
+
